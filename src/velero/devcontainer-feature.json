@@ -1,0 +1,20 @@
+{
+    "name": "Velero (via Github Releases)",
+    "id": "velero",
+    "version": "1.0.0",
+    "description": "Velero (formerly Heptio Ark) gives you tools to back up and restore your Kubernetes cluster resources and persistent volumes. You can run Velero with a public cloud platform or on-premises.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}
